@@ -11,8 +11,8 @@ services:
       - email.server.url=http://${IP}:8081
 
     networks:
-      - udemy
+      - microservice
 
 networks:
-  udemy:
+  microservice:
     external: true

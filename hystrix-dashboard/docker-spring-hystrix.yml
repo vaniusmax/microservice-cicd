@@ -6,8 +6,8 @@ services:
     ports:
       - 7979:7979
     networks:
-      - udemy
+      - microservice
 
 networks:
-  udemy:
+  microservice:
     external: true

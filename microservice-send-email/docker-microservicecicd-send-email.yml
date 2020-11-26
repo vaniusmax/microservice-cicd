@@ -8,8 +8,8 @@ services:
     environment:
       - spring.boot.admin.client.url=${SPRING_ADMIN}
     networks:
-      - udemy
+      - microservice
 
 networks:
-  udemy:
+  microservice:
     external: true

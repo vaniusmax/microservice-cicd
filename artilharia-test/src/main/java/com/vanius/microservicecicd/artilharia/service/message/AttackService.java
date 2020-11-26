@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.marcelosouzav.udemy.microservicecicd.serveradmin.enums.TypeMessageEnum;
 import com.vanius.microservicecicd.artilharia.gateway.json.Message;
+import com.vanius.microservicecicd.serveradmin.enums.TypeMessageEnum;
 
 import lombok.extern.log4j.Log4j2;
 
@@ -37,7 +37,7 @@ public class AttackService {
             Message message = Message
                     .builder()
                     .client(div == 1? "email"+loop+"@email.com" : "48 9999 999"+loop)
-                    .name("Marcelo : " + loop)
+                    .name("Vanius : " + loop)
                     .type(div == 1 ? TypeMessageEnum.EMAIL.toString() : TypeMessageEnum.SMS.toString())
                     .build();
 
