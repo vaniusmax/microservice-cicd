@@ -19,7 +19,7 @@ node {
 
     stage('Deploy') {
       dir('microservice-send-sms') {
-         sh "SPRING_ADMIN=http://192.168.0.105:8090 docker stack deploy --compose-file docker-microservicecicd-send-sms.yml send_sms  "
+         sh "SPRING_ADMIN=http://192.168.0.41:8090 docker stack deploy --compose-file docker-microservicecicd-send-sms.yml send_sms  "
       }
     }
 }
