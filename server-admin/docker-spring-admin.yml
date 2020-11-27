@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   server-admin:
-    image: udemy-server-admin:v1
+    image: microservice-server-admin:v1
     ports:
       - 8090:8090
     networks:

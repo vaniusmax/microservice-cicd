@@ -13,7 +13,7 @@ node {
 
    stage('Build docker hystrix') {
        dir('hystrix-dashboard') {
-          sh "docker build -t udemy-server-hystrix:v1 ."
+          sh "docker build -t microservice-server-hystrix:v1 ."
        }
    }
 

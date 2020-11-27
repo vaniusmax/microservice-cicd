@@ -13,7 +13,7 @@ node {
 
    stage('Build docker send sms') {
        dir('microservice-send-sms') {
-          sh "docker build -t udemy-microservicecicd-send-sms:v1 ."
+          sh "docker build -t microservice-microservicecicd-send-sms:v1 ."
        }
    }
 
